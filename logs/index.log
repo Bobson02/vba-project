@@ -1,0 +1,7 @@
+2024-04-04 20:19:38 error: Adding User: Invalid password: password123, must be at least 4 characters long and contain at least one capital letter and one digit
+2024-04-04 20:19:54 error: Cannot add or update a child row: a foreign key constraint fails (`vba`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`roleId`) REFERENCES `roles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2024-04-04 20:28:06 error: Error creating course: Cannot add or update a child row: a foreign key constraint fails (`vba`.`courses`, CONSTRAINT `courses_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON UPDATE CASCADE)
+2024-04-04 20:29:17 error: Error creating course: Cannot add or update a child row: a foreign key constraint fails (`vba`.`courses`, CONSTRAINT `courses_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON UPDATE CASCADE)
+2024-04-04 20:31:55 error: Error fetching all courses: Unknown column 'Course.userId' in 'field list'
+2024-04-04 20:33:57 error: Error fetching all courses: Unknown column 'userId' in 'field list'
+2024-04-04 20:33:58 error: Error fetching all courses: Unknown column 'userId' in 'field list'

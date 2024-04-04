@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
       });
 
       this.hasMany(models.Course, {
-        foreignKey: 'userId',
+        foreignKey: 'user_id',
         as: 'courses',
         onDelete: 'CASCADE',
       });

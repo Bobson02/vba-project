@@ -20,7 +20,7 @@ const signup = async (req, res) => {
     return res.status(400).json({ ok: false, errors: errors.array() });
   }
 
-  const { firstName, lastName, email, password } = req.body;
+  const { firstName, lastName, email, password, roleId } = req.body;
   // email validation
   if (!validateEmail(email)) {
     logger.error(
@@ -61,6 +61,7 @@ const signup = async (req, res) => {
     lastName,
     email,
     password: hashedPassword,
+    roleId,
   });
 
   return res.status(201).json({
