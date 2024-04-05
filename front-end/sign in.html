@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navigation Bar</title>
+<link rel="stylesheet" href="./css/sign in.css">
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <a href="#">Your Logo Here</a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./sign in.html">Sign In</a></li>
+    </ul>
+    
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+<hr>
+
+    <div class="container">
+        <h2>Welcome Back!</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div id="loaderContainer" class="hidden">
+                <div id="loader"></div>
+            </div>
+            <div id="feedbackMessage"></div>
+
+            <div class="form-group">
+                <button type="submit" id="loginButton">Sign In</button>
+            </div>
+            
+            <div class="form-group">
+                <p>Don't have an account? <a href="./create account.html" onclick="showSignUpForm()">Create Account</a></p>
+            </div>
+
+        </form>
+      
+    </div>
+    
+      <footer class="footer">
+        <h2>Edu<span class="highlight">Cravings</span></h2>
+        <hr>
+        <p>&copy; 2024 EduCravings. All rights reserved.</p>
+      </footer>
+      
+<script src="login.js"></script>
+</body>
+</html>
