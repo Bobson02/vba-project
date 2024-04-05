@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
       feedbackMessage.textContent = "Login successful!";
       feedbackMessage.classList.remove("error");
       feedbackMessage.classList.add("success");
-      // Replace the console.log with the appropriate action (e.g., redirecting to dashboard)
+    
        window.location.href = "/front-end";
     } catch (error) {
       console.error("Error logging in:", error.message);
@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
       feedbackMessage.textContent = "Login failed. Please try again.";
       feedbackMessage.classList.add("error");
     } finally {
-      loginButton.disabled = false; // Enable button after request completes
-      loginButton.innerHTML = "Sign In"; // Restore button text
+      loginButton.disabled = false; 
+      loginButton.innerHTML = "Sign In"; 
     }
   });
 });
